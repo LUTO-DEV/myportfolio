@@ -1,0 +1,210 @@
+/* ===== Reset ===== */
+•	{
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+  }
+  
+  /* ===== Body Base ===== */
+  Body {
+    Font-family: ‘Segoe UI’, sans-serif;
+    Background-color: #111;
+    Color: #eee;
+    Line-height: 1.6;
+    Padding: 20px;
+  }
+  
+  /* ===== Navigation Bar ===== */
+  Nav {
+    Background-color: #1e1e1e;
+    Padding: 15px 20px;
+    Border-radius: 10px;
+    Margin-bottom: 40px;
+  }
+  
+  Nav ul {
+    List-style: none;
+    Display: flex;
+    Justify-content: center;
+    Flex-wrap: wrap;
+    Gap: 30px;
+  }
+  
+  Nav a {
+    Text-decoration: none;
+    Color: #bbb;
+    Font-weight: bold;
+    Transition: color 0.3s ease;
+  }
+  
+  Nav a:hover,
+  Nav a.active {
+    Color: #00ffc3;
+  }
+  
+  /* ===== Hero Section ===== */
+  .hero {
+    Text-align: center;
+    Margin-bottom: 50px;
+  }
+  
+  .hero h1 {
+    Font-size: 3em;
+    Margin-bottom: 10px;
+    Color: #fff;
+  }
+  
+  .hero .highlight {
+    Color: #00ffc3;
+    Text-shadow: 0 0 5px #00ffc3;
+  }
+  
+  .hero p {
+    Color: #aaa;
+    Font-size: 1.2em;
+  }
+  
+  /* ===== About Section ===== */
+  .about {
+    Max-width: 800px;
+    Margin: auto;
+    Background: rgba(255, 255, 255, 0.04);
+    Padding: 30px;
+    Border-radius: 12px;
+    Backdrop-filter: blur(8px);
+    Box-shadow: 0 8px 30px rgba(0, 255, 195, 0.05);
+  }
+  
+  .about h2 {
+    Font-size: 2em;
+    Margin-bottom: 15px;
+    Color: #00ffc3;
+  }
+  
+  .about p {
+    Color: #ccc;
+    Font-size: 1.1em;
+  }
+  
+  /* ===== Footer ===== */
+  Footer {
+    Margin-top: 60px;
+    Text-align: center;
+    Color: #777;
+    Font-size: 14px;
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 768px) {
+    .hero h1 {
+      Font-size: 2.2em;
+    }
+  
+    .about {
+      Padding: 20px;
+    }
+  
+    Nav ul {
+      Gap: 15px;
+    }
+  }
+
+  
+
+  /* ===== Projects Grid ===== */
+.projects {
+    Display: grid;
+    Grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    Gap: 25px;
+    Max-width: 1000px;
+    Margin: auto;
+    Padding: 20px;
+  }
+  
+  .project-card {
+    Background: rgba(255, 255, 255, 0.04);
+    Padding: 25px;
+    Border-radius: 12px;
+    Backdrop-filter: blur(8px);
+    Box-shadow: 0 4px 20px rgba(0, 255, 195, 0.1);
+    Transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    Transform: translateY(-5px);
+    Box-shadow: 0 8px 30px rgba(0, 255, 195, 0.2);
+  }
+  
+  .project-card h3 {
+    Color: #00ffc3;
+    Margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    Color: #bbb;
+    Margin-bottom: 15px;
+  }
+  
+  .project-card a {
+    Color: #00ffc3;
+    Text-decoration: none;
+    Font-weight: bold;
+  }
+  
+  .project-card a:hover {
+    Text-decoration: underline;
+  }
+
+  
+
+ /* ===== Contact Form ===== */
+.contact-form {
+  Max-width: 600px;
+  Margin: auto;
+  Background: rgba(255, 255, 255, 0.04);
+  Padding: 30px;
+  Border-radius: 12px;
+  Backdrop-filter: blur(8px);
+  Box-shadow: 0 4px 20px rgba(0, 255, 195, 0.05);
+}
+
+Form {
+  Display: flex;
+  Flex-direction: column;
+  Gap: 15px;
+}
+
+Label {
+  Color: #00ffc3;
+  Font-weight: bold;
+}
+
+Input, textarea {
+  Padding: 10px;
+  Border: none;
+  Border-radius: 6px;
+  Background: #222;
+  Color: #fff;
+  Font-size: 16px;
+}
+
+Input:focus, textarea:focus {
+  Outline: 2px solid #00ffc3;
+}
+
+Button {
+  Background-color: #00ffc3;
+  Color: #000;
+  Border: none;
+  Padding: 12px;
+  Border-radius: 8px;
+  Font-weight: bold;
+  Font-size: 16px;
+  Cursor: pointer;
+  Transition: background 0.3s ease;
+}
+
+Button:hover {
+  Background-color: #00c2a0;
+}
+ 
